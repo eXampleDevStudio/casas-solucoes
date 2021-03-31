@@ -29,6 +29,28 @@
 
 }
 
+@media screen and (max-height:700px) {
+    .container-img img{
+        margin-top: -50px;
+    }
+
+    .container-options .grid-options {
+        flex: .5;
+        transform: scale(.8);
+        transition: .5s;
+    }
+
+    .container-footer {
+        height: 30%;
+    }
+}
+
+@media screen and (max-height:500px) {
+    .container-img img{
+        margin-top: -50px;
+    }
+}
+
 @media screen and (max-width:600px) {
     .container-img img{
         width: 50%;
