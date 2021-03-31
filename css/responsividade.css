@@ -1,11 +1,11 @@
-@media(max-width: 1250px) {
+@media screen and (max-width: 1250px) {
     .container-text {
         font-size: 1.6rem;
         transition: 0.5s;
     }
 }
 
-@media(max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .container-img img{
         width: 25%;
         transition: 0.5s;
@@ -16,7 +16,7 @@
     }
 }
 
-@media(max-width:820px) {
+@media screen and (max-width:820px) {
     .container-img img{
         width: 35%;
         transition: 0.5s;
@@ -46,7 +46,7 @@
     }
 }
 
-@media(max-width:600px) {
+@media screen and (max-width:600px) {
     .container-img img{
         width: 50%;
         transition: 0.5s;
@@ -70,7 +70,7 @@
     }
 }
 
-@media(max-width: 460px) {
+@media screen and (max-width: 460px) {
     .container-img img{
         width: 60%;
         transition: 0.5s;
@@ -106,7 +106,7 @@
     }
 }
 
-@media(max-width: 350px) {
+@media screen and (max-width: 350px) {
     .container-img img{
         width: 70%;
         transition: 0.5s;
