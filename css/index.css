@@ -31,22 +31,27 @@ main {
     flex-direction: column;
 }
 
-div[class*="option-left"] {
+div[class="option-left"] {
     animation: animate-options-left 1s ease-in-out;
     animation-fill-mode: both;
     cursor: pointer;
 }
 
 div[class*="option-right"] {
-    animation: animate-options-right 1s ease-in-out;
+    animation: animate-options-left 1s ease-in-out;
     animation-fill-mode: both;
     cursor: pointer;
 }
 
-div[class="option-right"]:last-child {
+div[class*="option-right"]:last-child {
     animation: animate-options-last 1s ease-in-out;
     animation-fill-mode: both;
     cursor: pointer;
+}
+
+span[class*="text-option"] {
+    animation: animate-footer 1s ease-in-out 1s;
+    animation-fill-mode: both;
 }
 
 .container-img {
@@ -143,7 +148,8 @@ div[class="option-right"]:last-child {
     padding: 0 20px 0;
     margin-bottom: 20px;
 
-    animation: animate-footer 1s ease-in-out;
+    animation: animate-footer 1s ease-in-out 1s;
+    animation-fill-mode: both;
 }
 
 .container-footer a i {
