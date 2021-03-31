@@ -94,6 +94,7 @@ span[class*="text-option"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    overflow: hidden;
 }
 
 .container-options .grid-options .option-right, .option-left {
