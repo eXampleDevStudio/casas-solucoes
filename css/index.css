@@ -203,11 +203,14 @@ span[class*="text-option"] {
 
     .container-options .grid-options .option-right, .option-left span {
         font-size: 1.3rem;
-        
     }
 
     .container-options .grid-options .option-right span{
         margin-left: 80px;
+    }
+
+    .container-options .grid-options .option-right:last-child span{
+        margin-left: 0px;
     }
 
     .container-options .grid-options .option-left span{
