@@ -29,6 +29,7 @@ main {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    overflow: hidden;
 }
 
 div[class="option-left"] {
@@ -94,7 +95,6 @@ span[class*="text-option"] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    overflow: hidden;
 }
 
 .container-options .grid-options .option-right, .option-left {
@@ -140,6 +140,7 @@ span[class*="text-option"] {
     height: 10%;
     width: 15%;
     background-color: white;
+    margin-bottom: -15px;
 
     clip-path: polygon(7% 0%, 93% 0%, 100% 20%, 100% 80%, 93% 80%, 7% 80%, 0% 80%, 0% 20%);
 
@@ -148,7 +149,7 @@ span[class*="text-option"] {
 .container-footer a{
     padding: 0 20px 0;
     margin-bottom: 20px;
-
+    overflow: hidden;
     animation: animate-footer 1s ease-in-out 1s;
     animation-fill-mode: both;
 }
@@ -264,7 +265,7 @@ span[class*="text-option"] {
 
 @media screen and (max-width:250px) {
     .container-img img {
-        width: 70%;
+        width: 30%;
     }
 
     .container-text {
@@ -278,6 +279,11 @@ span[class*="text-option"] {
 
     .container-footer {
         width: 100%;
+
+    }
+
+    .container-footer {
+        height: 7%;
     }
 
     .container-footer a:hover {
