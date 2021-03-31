@@ -1,0 +1,140 @@
+@media(max-width: 1250px) {
+    .container-text {
+        font-size: 1.6rem;
+        transition: 0.5s;
+    }
+}
+
+@media(max-width: 1080px) {
+    .container-img img{
+        width: 25%;
+        transition: 0.5s;
+    }
+    .container-text {
+        width: 40%;
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width:820px) {
+    .container-img img{
+        width: 35%;
+        transition: 0.5s;
+    }
+
+    .container-text {
+        width: 60%;
+        font-size: 1.7rem;
+    }
+
+    .container-options .grid-options .option-right, .option-left {
+        width: 15rem;
+        height: 4.3rem;
+    }
+
+
+    .container-options .grid-options .option-right, .option-left {
+        width: 17rem;
+    } 
+    
+    .container-options .grid-options .option-right:last-child {
+        margin-left: 9rem;
+    }
+
+    .container-footer {
+        width: 30%;
+    }
+}
+
+@media(max-width:600px) {
+    .container-img img{
+        width: 50%;
+        transition: 0.5s;
+    }
+
+    .container-text {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .container-options .grid-options .option-right, .option-left {
+        width: 17rem;
+    } 
+    
+    .container-options .grid-options .option-right:last-child {
+        margin-left: 9rem;
+    }
+
+    .container-footer {
+        width: 40%;
+    }
+}
+
+@media(max-width: 460px) {
+    .container-img img{
+        width: 60%;
+        transition: 0.5s;
+    }
+
+    .container-text {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .container-options .grid-options .option-right, .option-left {
+        width: 20rem;
+    }
+
+    .container-options .grid-options .option-right span {
+        margin-left: 70px;
+    }
+
+    .container-options .grid-options .option-left span {
+        margin-right: 70px;
+    }
+
+    .container-options .grid-options .option-right:last-child span{
+        margin-left: 0;
+    }
+
+    .container-options .grid-options .option-right:last-child {
+        margin-left: 10.3rem;
+    }
+
+    .container-footer {
+        width: 50%;
+    }
+}
+
+@media(max-width: 350px) {
+    .container-img img{
+        width: 70%;
+        transition: 0.5s;
+    }
+
+    .container-text {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .container-options .grid-options .option-right span {
+        margin-left: 30px;
+    }
+
+    .container-options .grid-options .option-left span {
+        margin-right: 30px;
+    }
+
+    .container-options .grid-options .option-right:last-child span{
+        margin-left: 0;
+    }
+
+    .container-footer {
+        width: 50%;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,39 @@
+@keyframes animate-img {
+    from {opacity: 0; margin-top: -50px;}
+    to {opacity: 1; }
+}
+
+@keyframes animate-text {
+    from {opacity: 0; margin-top: -10px;}
+    to {opacity: 1;}
+}
+
+@keyframes animate-options-left {
+    from {opacity: 0; margin-left: -50px;}
+    to {opacity: 1;}
+}
+
+@keyframes animate-options-right {
+    from {opacity: 0; margin-right: -50px;}
+    to {opacity: 1;}
+}
+
+@keyframes animate-options-last {
+    from {opacity: 0; margin-top: -30px;}
+    to {opacity: 1;}
+}
+
+@keyframes animate-footer {
+    from {opacity: 0; margin-bottom: -50px;}
+    to {opacity: 1;}
+}
+
+@keyframes animate-text-options {
+    from {opacity: 0; margin-top: -20px;}
+    to {opacity: 1;}
+}
+
+@keyframes animate-logo {
+    0% { }
+    50% {transform: scale(1.1);}
+}

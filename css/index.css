@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+@import url('animations.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white:#ffffff;
+    --azul-escuto:#0E2048;
+    --marrom:#B36D53;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, input, textarea, button {
+    color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+div[class*="option-left"] {
+   animation: animate-options-left 1s ease-in-out;
+   animation-fill-mode: both;
+   cursor: pointer;
+}
+
+div[class*="option-right"] {
+    animation: animate-options-right 1s ease-in-out;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+div[class="option-right"]:last-child {
+    animation: animate-options-last 1s ease-in-out;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--azul-escuto);
+    max-height: 100%;
+    overflow: hidden;
+}
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+
+.container-img {
+    display: flex;
+    flex: .5;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    animation: animate-img 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.container-img img {
+    -webkit-box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
+    box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
+    border-radius: 50%;
+}
+
+.container-img img {
+    width: 20%;
+}
+
+.container-img img:hover {
+    animation: animate-logo .4s ease-in-out;
+    animation-iteration-count: 2;
+}
+
+.container-text {
+    display: flex;
+    flex:.5;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    font-size: 1.7rem;
+
+    animation: animate-text 1s ease-in-out 1s;
+    animation-fill-mode: both;
+}
+
+.container-options {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-options .grid-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.container-options .grid-options .option-right:last-child {
+    grid-column: span 2;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.container-options .grid-options .option-right, .option-left {
+    height: 4rem;
+    width: 13rem;
+    background-color:var(--marrom);
+    padding: 20px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    clip-path: polygon(7% 0%, 93% 0%, 100% 20%, 100% 80%, 93% 100%, 7% 100%, 0% 80%, 0% 20%);
+
+    -webkit-box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
+    box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
+}
+
+.container-options .grid-options .option-right, .option-left span {
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.container-options .grid-options .option-right:hover, .option-left:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.container-footer {
+    display: flex;
+
+    flex: .7;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: var(--white);
+    height:1%;
+    width: 15%;
+
+    clip-path: polygon(7% 0%, 93% 0%, 100% 20%, 100% 80%, 93% 80%, 7% 80%, 0% 80%, 0% 20%);
+
+}
+
+.container-footer a {
+    color:var(--marrom);
+    padding:0px 10px 0px;
+    margin-top: -20px;
+    transform: scale(2);
+
+    animation: animate-footer 1s ease-in-out;
+}
+
+.container-footer a:hover {
+    transform: scale(2.3);
+    transition: 0.3s;
+}
