@@ -27,23 +27,6 @@
         font-size: 1.7rem;
     }
 
-    .container-options .grid-options .option-right, .option-left {
-        width: 15rem;
-        height: 4.3rem;
-    }
-
-
-    .container-options .grid-options .option-right, .option-left {
-        width: 17rem;
-    } 
-    
-    .container-options .grid-options .option-right:last-child {
-        margin-left: 9rem;
-    }
-
-    .container-footer {
-        width: 30%;
-    }
 }
 
 @media screen and (max-width:600px) {
@@ -55,18 +38,6 @@
     .container-text {
         width: 100%;
         font-size: 1.7rem;
-    }
-
-    .container-options .grid-options .option-right, .option-left {
-        width: 17rem;
-    } 
-    
-    .container-options .grid-options .option-right:last-child {
-        margin-left: 9rem;
-    }
-
-    .container-footer {
-        width: 40%;
     }
 }
 
@@ -80,30 +51,6 @@
         width: 100%;
         font-size: 1.4rem;
     }
-
-    .container-options .grid-options .option-right, .option-left {
-        width: 20rem;
-    }
-
-    .container-options .grid-options .option-right span {
-        margin-left: 70px;
-    }
-
-    .container-options .grid-options .option-left span {
-        margin-right: 70px;
-    }
-
-    .container-options .grid-options .option-right:last-child span{
-        margin-left: 0;
-    }
-
-    .container-options .grid-options .option-right:last-child {
-        margin-left: 10.3rem;
-    }
-
-    .container-footer {
-        width: 50%;
-    }
 }
 
 @media screen and (max-width: 350px) {
@@ -116,25 +63,5 @@
         width: 100%;
         font-size: 1.3rem;
     }
-
-    .container-options .grid-options .option-right span {
-        margin-left: 30px;
-    }
-
-    .container-options .grid-options .option-left span {
-        margin-right: 30px;
-    }
-
-    .container-options .grid-options .option-right:last-child span{
-        margin-left: 0;
-    }
-
-    .container-footer {
-        width: 50%;
-    }
 }
-
-
-
-
 
