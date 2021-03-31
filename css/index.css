@@ -14,23 +14,27 @@
     --marrom:#B36D53;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+body {
+    height: 100vh;
+    background-color: var(--azul-escuto);
+    overflow: hidden;
 
-body, input, textarea, button {
-    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    color: white;
 }
-
-a {
-    color: inherit;
-    text-decoration: none;
+main {
+    height: 105%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 div[class*="option-left"] {
-   animation: animate-options-left 1s ease-in-out;
-   animation-fill-mode: both;
-   cursor: pointer;
+    animation: animate-options-left 1s ease-in-out;
+    animation-fill-mode: both;
+    cursor: pointer;
 }
 
 div[class*="option-right"] {
@@ -45,41 +49,21 @@ div[class="option-right"]:last-child {
     cursor: pointer;
 }
 
-body {
-    background-color: var(--azul-escuto);
-    max-height: 100%;
-    overflow: hidden;
-}
-main {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    margin: 15px;
-
-}
-
-
 .container-img {
     display: flex;
-    flex: .5;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+
     animation: animate-img 1s ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .container-img img {
+    width: 25%;
     -webkit-box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
     -moz-box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
     box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
     border-radius: 50%;
-}
-
-.container-img img {
-    width: 20%;
 }
 
 .container-img img:hover {
@@ -88,15 +72,8 @@ main {
 }
 
 .container-text {
-    display: flex;
-    flex:.5;
     width: 30%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    font-family: 'Bebas Neue';
     text-align: center;
-    font-size: 1.7rem;
 
     animation: animate-text 1s ease-in-out 1s;
     animation-fill-mode: both;
@@ -104,7 +81,6 @@ main {
 
 .container-options {
     display: flex;
-    flex: 3;
     align-items: center;
     justify-content: center;
 }
@@ -115,34 +91,34 @@ main {
     grid-gap: 1rem;
 }
 
-.container-options .grid-options .option-right:last-child {
-    grid-column: span 2;
-    margin-left: 7rem;
-    margin-right: 7rem;
-}
-
 .container-options .grid-options .option-right, .option-left {
-    height: 4rem;
-    width: 13rem;
+    height: 4.1rem;
+    width: 15rem;
     background-color:var(--marrom);
-    padding: 20px;
+    
 
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-
-    clip-path: polygon(7% 0%, 93% 0%, 100% 20%, 100% 80%, 93% 100%, 7% 100%, 0% 80%, 0% 20%);
 
     -webkit-box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
     -moz-box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
     box-shadow: 5px 7px 16px -3px rgba(0,0,0,0.58);
+    
+    clip-path: polygon(7% 0%, 93% 0%, 100% 20%, 100% 80%, 93% 100%, 7% 100%, 0% 80%, 0% 20%);
+
+    cursor: pointer;
 }
 
 .container-options .grid-options .option-right, .option-left span {
-    font-family: 'Chakra Petch', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    text-align: center;
+    font-family: "Chakra Petch";
+    font-size: 1.7rem;
+}
+
+.container-options .grid-options .option-right:last-child {
+    grid-column: span 2;
+    margin-left: 8rem;
+    margin-right: 8rem;
 }
 
 .container-options .grid-options .option-right:hover, .option-left:hover {
@@ -152,29 +128,129 @@ main {
 
 .container-footer {
     display: flex;
-
-    flex: .7;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
-    background-color: var(--white);
-    height:1%;
+    height: 10%;
     width: 15%;
+    background-color: white;
 
     clip-path: polygon(7% 0%, 93% 0%, 100% 20%, 100% 80%, 93% 80%, 7% 80%, 0% 80%, 0% 20%);
 
 }
 
-.container-footer a {
-    color:var(--marrom);
-    padding:0px 10px 0px;
-    margin-top: -20px;
-    transform: scale(2);
+.container-footer a{
+    padding: 0 20px 0;
+    margin-bottom: 20px;
 
     animation: animate-footer 1s ease-in-out;
 }
 
+.container-footer a i {
+    color: var(--marrom);
+}
+
 .container-footer a:hover {
-    transform: scale(2.3);
+    transform: scale(1.3);
     transition: 0.3s;
 }
+
+@media screen and (max-width: 1500px) {
+    .container-text {
+        width: 50%;
+    }
+
+    .container-footer {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .container-img img {
+        width: 30%;
+        transition: 0.5s;
+    }
+    .container-text {
+        width: 60%;
+        font-size: 1.8rem;
+    }
+
+    .container-options .grid-options .option-right, .option-left span {
+        font-size: 1.5rem;
+        transition: 0.5s;
+    }
+
+    .container-footer {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .container-img img {
+        width: 40%;
+    }
+
+    .container-text {
+        width: 70%;
+        font-size: 1.5rem;
+    }
+
+    .container-options .grid-options .option-right, .option-left span {
+        font-size: 1.3rem;
+        
+    }
+
+    .container-options .grid-options .option-right span{
+        margin-left: 80px;
+    }
+
+    .container-options .grid-options .option-left span{
+        margin-right: 80px;
+    }
+
+    .container-footer {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .container-img img {
+        width: 50%;
+    }
+
+    .container-text {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    .container-options .grid-options .option-right, .option-left {
+        height: 3.3rem;
+    }
+    .container-options .grid-options .option-right, .option-left span {
+        font-size: 1rem;
+    }
+
+    .container-footer {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .container-img img {
+        width: 70%;
+    }
+
+    .container-text {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .container-options .grid-options .option-right, .option-left span {
+        font-size: 1rem;
+    }
+
+    .container-footer {
+        width: 100%;
+    }
+}
+
